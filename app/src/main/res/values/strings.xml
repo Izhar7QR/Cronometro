@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Cronometro</string>
+    <string name="start">Iniciar</string>
+    <string name="pause">Pausa</string>
+    <string name="mark">Marcar</string>
+    <string name="reset">Reiniciar</string>
+    <string name="stop">Detener</string>
+    <string name="resume">Reanudar</string>
+</resources>

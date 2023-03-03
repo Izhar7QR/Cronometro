@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Chronometer
+        android:id="@+id/chronometer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline1"
+        android:text="00:00:00" />
+
+    <com.google.android.material.button.MaterialButtonToggleGroup
+        android:id="@+id/toggle_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        app:singleSelection="true"
+        app:checkedButton="@+id/start_button">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/start_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/start"
+            app:icon="@drawable/baseline_play_arrow_24"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/pause_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pause"
+            app:icon="@drawable/baseline_pause_24"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/mark_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mark"
+            app:icon="@drawable/baseline_flag_24"/>
+
+    </com.google.android.material.button.MaterialButtonToggleGroup>
+
+    <com.google.android.material.button.MaterialButtonToggleGroup
+        android:id="@+id/toggle_group2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        app:singleSelection="true"
+        app:checkedButton="@+id/start_button">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/stop_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/stop"
+            app:icon="@drawable/baseline_stop_24" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/reset_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/reset"
+            app:icon="@drawable/baseline_replay_24" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/resume_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/resume"
+            android:visibility="gone"
+            app:icon="@drawable/baseline_play_arrow_24" />
+
+    </com.google.android.material.button.MaterialButtonToggleGroup>
+    <TextView
+        android:id="@+id/empty_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+    <ListView
+        android:id="@+id/marks_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:dividerHeight="0dp">
+    </ListView>
+</LinearLayout>
